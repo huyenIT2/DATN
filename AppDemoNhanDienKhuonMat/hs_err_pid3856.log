@@ -1,0 +1,189 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffc69831be9, pid=3856, tid=18576
+#
+# JRE version:  (17.0.6) (build )
+# Java VM: OpenJDK 64-Bit Server VM (17.0.6+0-b2043.56-9586694, mixed mode, sharing, tiered, unknown gc, windows-amd64)
+# Problematic frame:
+# C  [jimage.dll+0x1be9]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: 
+
+Host: Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz, 4 cores, 7G,  Windows 10 , 64 bit Build 19041 (10.0.19041.2788)
+Time: Mon Apr 24 23:13:42 2023 SE Asia Standard Time elapsed time: 0.017489 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+Stack: [0x00000087af100000,0x00000087af200000],  sp=0x00000087af1fd220,  free space=1012k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [jimage.dll+0x1be9]
+C  [jimage.dll+0x1d77]
+C  [jimage.dll+0x2655]
+V  [jvm.dll+0x1f4f2a]
+V  [jvm.dll+0xb044e]
+V  [jvm.dll+0x7f2f2c]
+V  [jvm.dll+0x3f0e8f]
+V  [jvm.dll+0x3f29d1]
+C  [jli.dll+0x526b]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17604]
+C  [ntdll.dll+0x526a1]
+
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0x000000000000e72c
+
+
+Registers:
+RAX=0x00000000000039c4, RBX=0x00000087af1fd311, RCX=0x00007ffc69836000, RDX=0x00000000000039c4
+RSP=0x00000087af1fd220, RBP=0x00000087af1fd310, RSI=0x0000000000006ec1, RDI=0x00000087af1fd310
+R8 =0x00007ffc69834288, R9 =0x000000000000001c, R10=0x00007ffc4dff0000, R11=0x00007ffc69836000
+R12=0x0000000000000001, R13=0x0000019c45e17800, R14=0x00000087af1fe380, R15=0x00007ffc31ac5d28
+RIP=0x00007ffc69831be9, EFLAGS=0x0000000000010246
+
+Top of Stack: (sp=0x00000087af1fd220)
+0x00000087af1fd220:   00000087aed52000 0000000000000003
+0x00000087af1fd230:   0000019c45d31788 00000087af1fd390
+0x00000087af1fd240:   0000019c45e1d060 00007ffc69831d77
+0x00000087af1fd250:   000000000000000b 0000019c45e1d060
+0x00000087af1fd260:   00000087af1fd2b1 00000087af1fd390
+0x00000087af1fd270:   00000000000006f5 0000019c45e00150
+0x00000087af1fd280:   00000000000006f5 00000000000006f5
+0x00000087af1fd290:   00000000000006f5 0000019c45e00000
+0x00000087af1fd2a0:   0000019c48000000 00007ffc7acee2a9
+0x00000087af1fd2b0:   00006fd7e97dc2e6 0000000345000346
+0x00000087af1fd2c0:   00007ffc31aa45e0 0000000000000017
+0x00000087af1fd2d0:   0000019c45e1d060 00000087af1fe380
+0x00000087af1fd2e0:   000000000000000b 00007ffc69832655
+0x00000087af1fd2f0:   000000000000073a 000000000000073a
+0x00000087af1fd300:   000000000000073a 0000019c45e00000
+0x00000087af1fd310:   61622e6176616a2f 692f6b646a2f6573 
+
+Instructions: (pc=0x00007ffc69831be9)
+0x00007ffc69831ae9:   48 85 c9 74 1d 80 3d 1b 45 00 00 00 74 06 48 8b
+0x00007ffc69831af9:   53 18 eb 04 48 8b 53 40 e8 ae 0e 00 00 48 83 63
+0x00007ffc69831b09:   48 00 8b 4b 0c 83 f9 ff 74 09 e8 e4 0c 00 00 83
+0x00007ffc69831b19:   4b 0c ff 48 8b 4b 70 48 85 c9 74 0f ba 10 00 00
+0x00007ffc69831b29:   00 e8 fd 0e 00 00 48 83 63 70 00 48 83 c4 20 5b
+0x00007ffc69831b39:   c3 cc cc 40 53 48 83 ec 20 48 8b d9 48 8d 0d d4
+0x00007ffc69831b49:   46 00 00 e8 b3 0c 00 00 83 6b 08 01 75 24 48 8b
+0x00007ffc69831b59:   d3 48 8d 0d b7 44 00 00 e8 22 08 00 00 48 8b cb
+0x00007ffc69831b69:   e8 de fe ff ff ba 78 00 00 00 48 8b cb e8 b1 0e
+0x00007ffc69831b79:   00 00 48 8d 0d 9e 46 00 00 48 83 c4 20 5b e9 80
+0x00007ffc69831b89:   0c 00 00 48 89 5c 24 08 48 89 74 24 10 57 48 83
+0x00007ffc69831b99:   ec 20 41 8b f1 4d 8b c8 48 8b fa 4c 8b d9 4d 85
+0x00007ffc69831ba9:   c0 74 78 85 f6 74 74 44 8a 12 48 8d 5a 01 48 8b
+0x00007ffc69831bb9:   d3 b8 93 01 00 01 eb 12 69 c0 93 01 00 01 41 0f
+0x00007ffc69831bc9:   b6 ca 44 8a 12 33 c1 48 ff c2 45 84 d2 75 e9 4d
+0x00007ffc69831bd9:   8b 03 0f ba f0 1f 33 d2 49 8b cb f7 f6 48 63 c2
+0x00007ffc69831be9:   41 8b 14 81 41 ff 50 08 85 c0 7e 24 8a 0f eb 10
+0x00007ffc69831bf9:   69 c0 93 01 00 01 0f b6 c9 33 c1 8a 0b 48 ff c3
+0x00007ffc69831c09:   84 c9 75 ec 0f ba f0 1f 33 d2 f7 f6 8b c2 eb 0e
+0x00007ffc69831c19:   79 09 83 c9 ff 2b c8 8b c1 eb 03 83 c8 ff 48 8b
+0x00007ffc69831c29:   5c 24 30 48 8b 74 24 38 48 83 c4 20 5f c3 cc 48
+0x00007ffc69831c39:   89 5c 24 08 48 89 74 24 10 57 48 83 ec 20 48 8b
+0x00007ffc69831c49:   f1 48 8d 0d cf 45 00 00 e8 ae 0b 00 00 33 ff 39
+0x00007ffc69831c59:   3d ba 43 00 00 76 24 48 8b 05 b9 43 00 00 48 8b
+0x00007ffc69831c69:   d6 48 8b 1c f8 48 8b 0b e8 64 1e 00 00 85 c0 74
+0x00007ffc69831c79:   2b ff c7 3b 3d 96 43 00 00 72 dc 33 db 48 8d 0d
+0x00007ffc69831c89:   93 45 00 00 e8 7a 0b 00 00 48 8b 74 24 38 48 8b
+0x00007ffc69831c99:   c3 48 8b 5c 24 30 48 83 c4 20 5f c3 ff 43 08 eb
+0x00007ffc69831ca9:   dc cc cc 48 89 5c 24 08 48 89 74 24 10 57 48 83
+0x00007ffc69831cb9:   ec 20 48 8b d9 48 8b f2 48 8b 49 10 49 8b f8 8b
+0x00007ffc69831cc9:   53 30 48 8b 01 ff 50 20 4c 8b 43 50 48 8b d6 48
+0x00007ffc69831cd9:   8b 4b 10 44 8b c8 e8 a8 fe ff ff 83 f8 ff 74 38 
+
+
+
+---------------  P R O C E S S  ---------------
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Precious Log:
+<Not initialized>
+
+
+Dynamic libraries:
+0x00007ff68faa0000 - 0x00007ff68faaa000 	D:\android\android studio\jbr\bin\java.exe
+0x00007ffc7acd0000 - 0x00007ffc7aec8000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffc7a9d0000 - 0x00007ffc7aa8f000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffc78a50000 - 0x00007ffc78d2a000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffc788c0000 - 0x00007ffc789c0000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffc67890000 - 0x00007ffc678a7000 	D:\android\android studio\jbr\bin\jli.dll
+0x00007ffc4dff0000 - 0x00007ffc4e00b000 	D:\android\android studio\jbr\bin\VCRUNTIME140.dll
+0x00007ffc79d70000 - 0x00007ffc79f0d000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffc78690000 - 0x00007ffc786b2000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffc67fa0000 - 0x00007ffc6823a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007ffc78fa0000 - 0x00007ffc78fcb000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffc79b20000 - 0x00007ffc79bbe000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffc786c0000 - 0x00007ffc787d0000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffc78490000 - 0x00007ffc7852d000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffc78e60000 - 0x00007ffc78e90000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffc64a00000 - 0x00007ffc64a0c000 	D:\android\android studio\jbr\bin\vcruntime140_1.dll
+0x00007ffc45130000 - 0x00007ffc451bd000 	D:\android\android studio\jbr\bin\msvcp140.dll
+0x00007ffc31180000 - 0x00007ffc31ded000 	D:\android\android studio\jbr\bin\server\jvm.dll
+0x00007ffc78ef0000 - 0x00007ffc78f9e000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffc7aa90000 - 0x00007ffc7ab2c000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffc798a0000 - 0x00007ffc799c6000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffc5bd20000 - 0x00007ffc5bd29000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffc79bc0000 - 0x00007ffc79c2b000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffc67bd0000 - 0x00007ffc67bf7000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffc759c0000 - 0x00007ffc759ca000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffc76c30000 - 0x00007ffc76c42000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffc69830000 - 0x00007ffc6983a000 	D:\android\android studio\jbr\bin\jimage.dll
+0x00007ffc76940000 - 0x00007ffc76b24000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffc62be0000 - 0x00007ffc62c14000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffc789c0000 - 0x00007ffc78a42000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;D:\android\android studio\jbr\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e;D:\android\android studio\jbr\bin\server
+
+VM Arguments:
+java_command: <unknown>
+java_class_path (initial): <not set>
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\CMake\bin;D:\elasticsearch-8.7.0\bin;C:\Users\Huyen\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\Huyen\AppData\Local\Programs\Python\Python36-32\;C:\Users\Huyen\.pyenv\pyenv-win\bin;C:\Users\Huyen\.pyenv\pyenv-win\shims;C:\Users\Huyen\AppData\Local\Microsoft\WindowsApps;C:\Users\Huyen\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;D:\Flutter\flutter\bin;
+USERNAME=Huyen
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
+TMP=C:\Users\Huyen\AppData\Local\Temp
+TEMP=C:\Users\Huyen\AppData\Local\Temp
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 10 , 64 bit Build 19041 (10.0.19041.2788)
+OS uptime: 0 days 10:09 hours
+
+CPU: total 4 (initial active 0) 
+
+Memory: 4k page, system-wide physical 8082M (317M free)
+TotalPageFile size 19551M (AvailPageFile size 4M)
+current process WorkingSet (physical memory assigned to process): 7M, peak: 7M
+current process commit charge ("private bytes"): 3M, peak: 3M
+
+vm_info: OpenJDK 64-Bit Server VM (17.0.6+0-b2043.56-9586694) for windows-amd64 JRE (17.0.6+0-b2043.56-9586694), built on Feb  9 2023 20:06:20 by "androidbuild" with MS VC++ 16.10 / 16.11 (VS2019)
+
+END.
