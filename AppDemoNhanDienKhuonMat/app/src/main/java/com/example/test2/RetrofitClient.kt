@@ -6,9 +6,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
 object RetrofitClient {
-    const val BASE_URL = "http://192.168.43.173:6868"
-    const val READ_TIME_OUT = 30L
-    const val CONNECT_TIME_OUT = 30L
+    const val BASE_URL = "http://172.72.213.234:6868/"
+    const val READ_TIME_OUT = 15L
+    const val CONNECT_TIME_OUT = 15L
     var INSTANCE: Retrofit? = null
     fun getInstance(): Retrofit {
         return INSTANCE ?: synchronized(this) {

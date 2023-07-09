@@ -1,4 +1,3 @@
-
 import matplotlib.pyplot as plt
 from datetime import datetime
 import cv2
@@ -7,7 +6,7 @@ from mtcnn import MTCNN
 start = datetime.now()
 
 # Load ảnh
-img = cv2.imread("Test.jpg")
+img = cv2.imread("IT_Fest.jpg")
 # Khởi tạo bộ nhận diện MTCNN
 detector = MTCNN()
 # Phát hiện khuôn mặt trong ảnh
